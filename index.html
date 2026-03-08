@@ -1,22 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pertemuan 2</title>
-    </head>
-    <body>
-        <h1>Pertemuan 2</h1>
-        <h2>Selamat Datang di Pertemuan 2</h2>
-        <p>Ini adalah pertemuan 2 dalam pembelajaran HTML.</p> 
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Punya Dito </title>
 
-        <img src="Oke.png" alt="Gambar Oke" width="500" height="300"> 
+<link rel="stylesheet"  href="styles.css">
 
-        <ol>
-            <li> Anton
-            <li> Slamet
-            <li> Budi
-        </ol>
-    
-    </body>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    color:#e74c3c;
+    margin-bottom:10px;
+    border-bottom:3px solid #e74c3c;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+h2{
+    margin-top:15px;
+    color:#2c3e50;
+}
+
+p{
+    margin:10px 0 25px 0;
+    color:#555;
+}
+
+.image-box{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+}
+
+.image-box img{
+    width:100%;
+    max-width:650px; 
+    border-radius:18px;
+    padding:8px;
+    background:white;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    transition: all 0.4s ease;
+}
+
+.image-box img:hover{
+    transform: scale(1.08);
+    box-shadow:0 20px 45px rgba(0,0,0,0.35);
+}
+
+.image-box img:hover{
+    transform:scale(1.05);
+}
+
+.list-section{
+    margin-top:20px;
+}
+
+.list-gaya{
+    list-style:none;
+    padding:0;
+}
+
+.list-gaya li{
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    margin-bottom:10px;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:600;
+    color:#2c3e50;
+    transition:0.3s;
+}
+
+.list-gaya li:hover{
+    transform:translateX(8px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.header-box{
+    background: linear-gradient(135deg,#fab98b,#e43489);
+    padding:25px 30px;
+    border-radius:15px;
+    margin-bottom:25px;
+    color:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    text-align: center; /* tulisan jadi di tengah */
+}
+
+.header-box h1{
+    color:white;
+    border:none;
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+.header-box h2{
+    color:#fdfdfd;
+    font-weight:500;
+}
+
+.header-box p{
+    color:#f1f1f1;
+    margin-top:8px;
+    font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header-box">
+<h1>Pertemuan 2</h1>
+<h2>Selamat Datang</h2>
+<p>Belajar Yokkkk</p>
+</div>
+
+<div class="image-box">
+<img src="Oke.png" alt="Gambar Oke">
+</div>
+
+<div class="list-section">
+<ol class="list-gaya">
+<li>Bumi</li>
+<li>Kamus Jawa</li>
+</ol>
+</div>
+
+</div>
+
+</body>
 </html>
